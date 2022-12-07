@@ -1,0 +1,399 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#home{
+    background-image: url(../img/bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+.main-color{
+    color: #748182;
+}
+/* start header */
+.navbar{
+    background-color: transparent;
+    transition: all 1s;
+}
+.bg-layer{
+    background-color: rgba(0, 0, 0, 0.4);
+    
+    height: 100vh;
+}
+.header-descrep p{
+font-size: 50px;
+font-family: 'Montserrat', sans-serif;
+margin-top: 250px;
+}
+.header-descrep h1::after{
+    content: '';
+    animation: animiheader1 6s infinite;
+}
+.header-caption h1{
+    font-size: 50px;
+}
+
+.icon-one  i{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: red; */
+}
+@keyframes animiheader1{
+    0%{content:'L|'}
+    5%{content:'La|'}
+    10%{content:'Lar|'}
+    15%{content:'Larr|'}
+    20%{content:'Larry|'}
+
+    25%{content: 'Larry Da|';}
+    30%{content: 'Larry Da|';}
+    35%{content: 'Larry Dan|';}
+    40%{content: 'Larry Danie|';}
+    45%{content: 'Larry Daniels|';}
+
+    50%{content: 'D|';}
+    55%{content: 'Deve|';}
+    60%{content: 'Develo|';}
+    65%{content: 'Develop|';}
+    70%{content: 'Developer|';}
+
+    75%{content: 'D|';}
+    80%{content: 'De|';}
+    85%{content: 'Des|';}
+    90%{content: 'Desi|';}
+    95%{content: 'Design|';}
+    100%{content: 'Designer|';}
+}
+
+/* end header */
+.section-two{
+    margin-top: 80px;
+}
+.about-me {
+    font-family: 'Montserrat', sans-serif;
+}
+.under-header{
+    font-size: 14px;
+}
+.bg-skill{
+    background-color: #f7f7f7;
+    box-shadow: 0px 2px 7px rgb(0 0 0 / 15%) inset;
+    border-radius:6px;
+    position: relative;
+}
+.bg-skill p{
+    font-size: 14px;
+    color: #fff;
+    z-index: 2;
+}
+
+.bg-skill span{
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 14px;
+}
+.span1{
+    width: 95%;
+}
+.span2{
+    width: 80%;
+}
+.span3{
+    width: 90%;
+}
+.bg-skill span::after{
+    content: attr(data-value);
+    position: absolute;
+    right: 0;
+    padding: 6px;
+    top: -2px;
+    
+}
+.all-skills button{
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-top: 20px;
+    border: 1px solid black;
+    transition: .4s all ease-in;
+}
+.btn-cv:hover{
+    background-color: #fff;
+    color: black;
+}
+.btn-contact:hover{
+    background-color:black ;
+    color: #fff;
+}
+.img-two{
+    position: relative;
+}
+.img-two::after{
+    content: '';
+    position: absolute;
+    background-image: url(../img/dots.png);
+    width: 75%;
+    height: 90%;
+    background-repeat: repeat;
+    left: -10px;
+    z-index: -1;
+    bottom: -30px;
+}
+
+/* end section two */
+/* srart section three */
+.section-three{
+    background-color: #f7f7f7;
+    padding: 40px 0;
+    margin: 40px 0;
+}
+.service{
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+.service::after{
+    content: "";
+    position: absolute;
+    background-image: url(../img/dots.png);
+    background-repeat: repeat;
+    width: 140px;
+    height: 30%;
+    left: 44%;
+    bottom: 20px;
+    z-index: 1;
+}
+.card-three span{
+    font-size: 24px;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    padding: 20px 25px;
+    transition: all .5s ease;
+}
+.card-three i{
+    margin: 40px 0;
+    
+}
+.card-three h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+.card-three p{
+    color: #748182;
+}
+.item-three:hover span{
+    background-color: black;
+    color: #fff;
+}
+/* end section three */
+/* start section four */
+.portfolio{
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+.portfolio::after{
+    content: "";
+    position: absolute;
+    background-image: url(../img/dots.png);
+    background-repeat: repeat;
+    width: 140px;
+    height: 30%;
+    left: 44%;
+    bottom: 30px;
+    z-index: -1;
+}
+.nav-item button {
+    color: black;
+    font-weight: 600;
+    background-color: transparent !important;
+}
+.nav-item button.active{
+    color: black !important;
+    border-bottom: 3px black solid;
+    border-radius: 0 !important;
+}
+.nav-item button{
+    cursor: pointer;
+    color: black !important;
+}
+.work-item .layer-four{
+    background-color: white;
+    width: 96%;
+    height: 96%;
+    left: 8px !important;
+    bottom: 7px !important;
+    transition: .5s;
+}
+.work-item:hover .layer-four{
+    opacity: 1 !important;
+}
+.work-details i{
+    background-color: black;
+    color: white !important;
+    padding: 11px 10px;
+    margin-top: 10px;
+    transition: all .3s;
+
+}
+.work-details i:hover{
+    background-color: white;
+    color: black !important;
+    border: solid 1px black;
+}
+/* end section four */
+/* start section five */
+.section-five{
+    background-color: #f7f7f7;
+}
+.testimonials{
+    font-family: 'Montserrat', sans-serif;
+
+}
+#carouselExampleIndicators .carousel-indicators button.active{
+    background: #869791 !important;
+    opacity: 1;
+    margin: 0 10px;
+    width: 20px ;
+    height: 1px ;
+    border-radius: 50%;
+}
+
+#carouselExampleIndicators .carousel-indicators button{
+    background: #b4bab8 !important;
+    opacity: .5;
+    margin: 0 10px;
+    width: 20px ;
+    height: 1px ;
+    border-radius: 50%;
+}
+/* end section five */
+/* start section six */
+.item-six i{
+    font-size: 32px;
+    margin: 20px 0;
+
+}
+.item-six .numbers-six{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* end section six */
+/* start section seven */
+#carouselExampleIndicators2 .carousel-indicators button.active{
+    background: #869791 !important;
+    opacity: 1;
+    margin: 0 10px;
+    width: 20px ;
+    height: 1px ;
+    border-radius: 50%;
+}
+
+#carouselExampleIndicators2 .carousel-indicators button{
+    background: #b4bab8 !important;
+    opacity: .5;
+    margin: 0 10px;
+    width: 20px ;
+    height: 1px ;
+    border-radius: 50%;
+}
+.blog{
+    font-family: 'Montserrat', sans-serif;
+}
+.section-seven{
+    background-color: #f7f7f7;
+}
+.card{
+    border: none;
+}
+
+.section-eight i{
+    background-color: #f4f4f4;
+}
+/* end section seven */
+/* start section eight */
+
+.submit-btn{
+    transition: .3s all ease-out;
+}
+.submit-btn:hover{
+    background-color: white !important;
+    color: black !important;
+
+}
+/* end section eight */
+/* start footer */
+footer{
+    background-color: #1c1c1c;
+    margin-bottom:0 ;
+    padding-bottom: 0;
+    font-size: 14px;
+}
+/* end footer */
+
+#btnUp{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 99999;
+    display: none;
+}
+
+.spin{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 9999999;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.spinner {
+    margin: 100px auto 0;
+    width: 80px;
+}
+
+.spinner > div {
+width: 18px;
+height: 18px;
+background-color: #09c;
+
+border-radius: 100%;
+display: inline-block;
+-webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+-webkit-animation-delay: -0.32s;
+animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+-webkit-animation-delay: -0.16s;
+animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+0%, 80%, 100% { -webkit-transform: scale(0) }
+40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+} 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+}
+}
